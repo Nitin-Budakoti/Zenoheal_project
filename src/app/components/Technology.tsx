@@ -11,13 +11,10 @@ const Technology: React.FC = () => {
           .fill(null)
           .map((_, index) => (
             <div key={index} className={styles.technologyBox}>
-              <img
-                alt={`Technology ${index + 1}`}
-                src="/placeholder.svg?height=80&width=80"
-                width={80}
-                height={80}
-                className={styles.technologyImage}
-              />
+              {/* Leave space blank or add a simple placeholder */}
+              <div className={styles.technologyImagePlaceholder}>
+                {/* You can later replace this with an <img> tag once you have the images */}
+              </div>
             </div>
           ))}
       </div>

@@ -11,7 +11,7 @@ const Support: React.FC = () => {
           <h3 className={styles.clientName}>John Doe</h3>
           <p className={styles.clientCompany}>HealthTech Inc.</p>
           <blockquote className={styles.clientTestimonial}>
-            "Zenoheal's AI solutions have transformed our healthcare delivery system."
+            &quot;Zenoheal&apos;s AI solutions have transformed our healthcare delivery system.&quot;
           </blockquote>
         </div>
 
@@ -19,7 +19,7 @@ const Support: React.FC = () => {
           <h3 className={styles.clientName}>Jane Smith</h3>
           <p className={styles.clientCompany}>EduLearn Corp.</p>
           <blockquote className={styles.clientTestimonial}>
-            "The ZenoED platform has revolutionized our online learning programs."
+            &quot;The ZenoED platform has revolutionized our online learning programs.&quot;
           </blockquote>
         </div>
 
@@ -27,7 +27,7 @@ const Support: React.FC = () => {
           <h3 className={styles.clientName}>Mike Johnson</h3>
           <p className={styles.clientCompany}>RetailGiant</p>
           <blockquote className={styles.clientTestimonial}>
-            "ZenoSCM has significantly improved our supply chain efficiency."
+            &quot;ZenoSCM has significantly improved our supply chain efficiency.&quot;
           </blockquote>
         </div>
       </div>
