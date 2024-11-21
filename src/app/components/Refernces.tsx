@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import styles from "./refernces.module.css";
+import styles from "./Refernces.module.css";
 
 const Reference: React.FC = () => {
   return (
-    <div className={styles.reference}>
+    <div className={styles.Reference}>
       <div className={styles.container}>
         <h1 className={styles.title}>Let&apos;s Connect to Co-Create Value</h1>
         <div className={styles.subheading}>

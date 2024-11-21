@@ -8,8 +8,8 @@ import Projects from './components/Projects';
 import Differentiators from './components/Differentiators';
 import Technology from './components/Technology';
 import Support from './components/Support';
-import Reference from './components/refernces';
-import Footer from './components/footer';
+import Reference from './components/Refernces'
+import Footer from './components/Footer';
 export default function HomePage() {
     return (
         <div>

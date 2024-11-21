@@ -1,0 +1,66 @@
+.Footer {
+  background-color: white; /* Maintains clean, minimalistic design */
+  color: #09090b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation from content */
+  z-index: 1000; /* Ensures visibility over content */
+}
+
+.left {
+  color: #6b7250; /* Calm color for branding consistency */
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+}
+
+.right {
+  display: flex;
+  gap: 1rem; /* Space between links */
+  font-size: 0.875rem; /* 14px */
+}
+
+.right a {
+  color: #09090b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+.right a:hover {
+  text-decoration: underline;
+  color: #6b7250; /* Match branding color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Footer {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: flex-start; /* Align content to the left */
+    padding: 1rem; /* Compact padding for smaller devices */
+  }
+
+  .right {
+    margin-top: 0.5rem; /* Space between sections */
+    gap: 0.75rem; /* Reduced gap for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Footer {
+    font-size: 0.8rem; /* Slightly smaller text for compact devices */
+  }
+
+  .right {
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem; /* Reduced spacing for tighter layout */
+  }
+
+  .right a {
+    font-size: 0.85rem; /* Adjust link size for mobile */
+  }
+}

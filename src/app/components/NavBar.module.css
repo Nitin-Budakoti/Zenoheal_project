@@ -1,35 +1,54 @@
-
 .navbar {
-    
     background-color: #f0f0f0;
     padding: 20px;
     border-bottom: 1px solid #ccc;
 }
 
 .navbar ul {
-    background-color:  #f0f0f0;
+    background-color: #f0f0f0;
     list-style-type: none;
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 15px;
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
 }
 
 .navbar li {
-
-    background-color:  #f0f0f0;
-
+    background-color: #f0f0f0;
     margin-right: 20px;
+    padding: 5px 10px;
 }
 
 .navbar a {
-    background-color:  #f0f0f0;
-    
+    background-color: #f0f0f0;
     text-decoration: none;
-   
 }
-.navbar a:hover{
-    color:grey;
+
+.navbar a:hover {
+    color: grey;
     transition: color 0.3s ease-in-out;
 }
 
+/* Responsive Styles - Make Navbar work well on Mobile */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;  /* Center the items */
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Increase spacing between items */
+    }
+
+    .navbar a {
+        font-size: 18px; /* Slightly larger font for mobile */
+        padding: 10px;  /* Add more padding to make links tappable */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a {
+        font-size: 16px; /* Smaller font for very small screens */
+    }
+}
