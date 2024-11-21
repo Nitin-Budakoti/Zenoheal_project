@@ -2,22 +2,22 @@
     background-color: #ffffff; /* White background */
     padding: 4rem 2rem;
     text-align: center;
-}
-
-.title {
-    font-size: 2.25rem; /* 36px */
+  }
+  
+  .title {
+    font-size: 2.25rem; /* Default size for large screens */
     font-weight: bold;
     color: #333; /* Dark text for visibility */
     margin-bottom: 2rem;
-}
-
-.differentiatorGrid {
+  }
+  
+  .differentiatorGrid {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-}
-
-.differentiatorCard {
+  }
+  
+  .differentiatorCard {
     background-color: #fff; /* White card background */
     border: 1px solid #e0e0e0; /* Light gray border */
     border-radius: 0.5rem; /* Rounded corners */
@@ -25,58 +25,36 @@
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-}
-
-.differentiatorCard:hover {
+  }
+  
+  .differentiatorCard:hover {
     transform: translateY(-10px); /* Slight lift effect on hover */
-}
-
-.differentiatorTitle {
-    font-size: 1.75rem; /* 28px */
+  }
+  
+  .differentiatorTitle {
+    font-size: 1.75rem; /* Default card title size */
     font-weight: bold;
     margin-bottom: 1rem;
-}
-
-.differentiatorDescription {
-    font-size: 1.125rem; /* 18px */
+  }
+  
+  .differentiatorDescription {
+    font-size: 1.125rem; /* Default card description size */
     color: #666; /* Dark gray color for description */
     line-height: 1.6;
-}
-
-/* Responsive Styles for Mobile and Tablet */
-@media screen and (max-width: 768px) {
+  }
+  
+  /* Reduce heading and card sizes on smaller screens */
+  @media screen and (max-width: 768px) {
     .title {
-        font-size: 1.75rem; /* Smaller font size for title */
+      font-size: 1.5rem; /* Smaller font size for title */
     }
-
-    .differentiatorGrid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* More compact grid on tablet */
+  
+    .differentiatorTitle {
+      font-size: 1.25rem; /* Adjust card title size */
     }
-
-    .differentiatorCard {
-        padding: 1rem; /* Adjust padding for smaller screens */
-    }
-
+  
     .differentiatorDescription {
-        font-size: 1rem; /* Adjust font size for description */
+      font-size: 1rem; /* Adjust card description size */
     }
-}
-
-/* Further adjustment for very small screens */
-@media screen and (max-width: 480px) {
-    .title {
-        font-size: 1.5rem; /* Smaller font size for mobile screens */
-    }
-
-    .differentiatorGrid {
-        grid-template-columns: 1fr; /* Stack the cards on mobile */
-    }
-
-    .differentiatorCard {
-        padding: 0.8rem; /* Adjust padding for very small screens */
-    }
-
-    .differentiatorDescription {
-        font-size: 0.95rem; /* Slightly smaller font size for mobile */
-    }
-}
+  }
+  
