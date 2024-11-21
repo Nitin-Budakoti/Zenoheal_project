@@ -2,20 +2,17 @@
   background-color: white;
   color: #09090b;
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if needed */
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  border-top: 1px solid #e0e0e0; /* Optional: adds a top border for separation */
+  box-sizing: border-box;
+  position: relative; /* Removed fixed positioning */
 }
 
 .left {
   color: #6b7250;
   font-size: 0.875rem;
-  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .right {
@@ -32,18 +29,4 @@
 
 .right a:hover {
   text-decoration: underline;
-}
-
-/* Ensure footer looks good on smaller screens */
-@media screen and (max-width: 768px) {
-  .Footer {
-    flex-direction: column; /* Stack content vertically */
-    text-align: center; /* Center align text */
-    padding: 1rem;
-  }
-
-  .right {
-    justify-content: center;
-    gap: 0.5rem; /* Adjust gap for smaller screens */
-  }
 }
