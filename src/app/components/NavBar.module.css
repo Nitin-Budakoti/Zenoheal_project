@@ -7,7 +7,9 @@
     align-items: center;
     flex-wrap: nowrap; /* Prevent wrapping */
     width: 100%;
-    overflow: hidden; /* Hide overflow */
+    box-sizing: border-box; /* Prevents navbar from stretching beyond its container */
+    position: relative; /* Ensure it's positioned relative to other components */
+    z-index: 10; /* Keeps navbar above other content */
 }
 
 .navbar ul {
